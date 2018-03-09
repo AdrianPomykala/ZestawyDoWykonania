@@ -24,6 +24,19 @@ public class Main {
                 190, LocalDate.of(2012, 8, 16), true, Drivetrain.FWD);
         Car car10 = new Car(CarBrand.BMW, "Z3", CarType.CABRIO, 13, 4.4, 2,
                 250, LocalDate.of(2018, 9, 17), true, Drivetrain.RWD);
+        CarOffer carOffer1 = new CarOffer(car1, 40000, 100);
+        CarOffer carOffer2 = new CarOffer(car2, 150000, 300);
+        CarOffer carOffer3 = new CarOffer(car3, 80000, 150);
+        CarOffer carOffer4 = new CarOffer(car4, 60000, 120);
+        CarOffer carOffer5 = new CarOffer(car5, 8000, 70);
+        CarOffer carOffer6 = new CarOffer(car6, 100000, 250);
+        CarOffer carOffer7 = new CarOffer(car7, 35000, 90);
+        CarOffer carOffer8 = new CarOffer(car8, 25000, 80);
+        CarOffer carOffer9 = new CarOffer(car9, 22000, 80);
+        CarOffer carOffer10 = new CarOffer(car10, 80000, 85);
+        CarShop carShop = new CarShop("Auto");
+        carShop.addCarOffers(carOffer1,carOffer2,carOffer3,carOffer4,carOffer5,carOffer6,
+                carOffer7,carOffer8,carOffer9,carOffer10);
     }
 }
 
