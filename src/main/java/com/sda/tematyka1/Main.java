@@ -37,6 +37,9 @@ public class Main {
         CarShop carShop = new CarShop("Auto");
         carShop.addCarOffers(carOffer1,carOffer2,carOffer3,carOffer4,carOffer5,carOffer6,
                 carOffer7,carOffer8,carOffer9,carOffer10);
+        System.out.println("Lista wszystkich samochodów \n" + carShop.getCars());
+        System.out.println("Lista dostępnych marek samochodowych \n" + carShop.getCarBrands());
+        System.out.println("Lista samochodów z napędem na 4 koła \n" + carShop.getAWDCars());
     }
 }
 
