@@ -40,6 +40,16 @@ public class Main {
         System.out.println("Lista wszystkich samochodów \n" + carShop.getCars());
         System.out.println("Lista dostępnych marek samochodowych \n" + carShop.getCarBrands());
         System.out.println("Lista samochodów z napędem na 4 koła \n" + carShop.getAWDCars());
+        String date = "2018-01-01";
+        System.out.println("Lista ofert samochodów niestarszych niż " + date + "\n" + carShop.getCarsNewestThan(date));
+        String brand = "AUDI";
+        System.out.println("Lista ofert samochodów marki " + brand + "\n" + carShop.getCarsOfBrand(brand));
+        System.out.println("Lista samochodów posortowana według zużycia paliwa \n" + carShop.getCarsFuelUsageSort());
+        System.out.println("Lista samochodów posortowana według mocy silnika \n" + carShop.getCarsEnginePowerSort());
+        System.out.println("Lista ofert posortowana według ceny \n" + carShop.getCarOffersPriceSort());
+        System.out.println("Lista najtańszych ofert \n" + carShop.getCheapestRentalOffer());
+        System.out.println("Lista ofert wszsytkich samochodów \n" + carShop.getCarOffers());
+        System.out.println("Lista ofert najtańszych i zarazem najmocniejszych samochodów \n" + carShop.getCheapestAndMostPowerfulCarOffer());
     }
 }
 
